@@ -1,5 +1,11 @@
 class Card < ActiveRecord::Base
 
+ 
+
+
+
+
+
   # Arrays containing hash names
 
   MAJOR = ["chariot", "chariot_inv", "death", "death_inv", "devil", "devil_inv", "emperor", "emperor_inv", "empress", "empress_inv", "fool", "fool_inv", "hanged", "hanged_inv", "hermit", "hermit_inv", "hierophant", "hierophant_inv", "hpriestess", "hpriestess_inv",  "judgment", "judgment_inv", "justice", "justice_inv", "lovers", "lovers_inv", "magician", "magician_inv", "moon", "moon_inv", "wheel", "wheel_inv", "world", "world_inv", "temperance", "temperance_inv", "tower", "tower_inv", "star", "star_inv", "strength", "strength_inv", "sun", "sun_inv"]
