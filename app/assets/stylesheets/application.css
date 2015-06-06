@@ -19,7 +19,7 @@ body {
   }
   /*TODO: find nice background pattern */
     
-h1 {
+.sitename {
   font-family: Ultra, serif;
   margin-bottom: 0px;
 }
