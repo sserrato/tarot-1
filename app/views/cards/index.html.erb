@@ -1,25 +1,25 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Cards</h1>
+<h1>Cards Index</h1>
 
-<table>
+<table calss="table">
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Theme</th>
-      <th>Meaning</th>
-      <th>Imagefile</th>
+      <th></th>
+      <th></th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
-    <% @cards.each do |card| %>
+    <% @cards.order("imagefile").each do |card| %>
       <tr>
-        <td><%= card.name %></td>
-        <td><%= card.theme %></td>
-        <td><%= card.meaning %></td>
-        <td><%= card.imagefile %></td>
+        <td class="cardsindex"><%= image_tag card.imagefile %></td>
+        <td><h4 style="margin-bottom: 0px;">The <%= link_to card.name, edit_card_path(card)  %> Card</h4><br/>
+        <strong>Theme:</strong> <%= card.theme %><br/>
+        <strong>Meaning:</strong> <%= card.meaning %><br/>
+        <p style="color: gray; font-size: 80%; font-style: italic;">Image file name: <%= card.imagefile %></p></td>
+        
         <td><%= link_to 'Show', card %></td>
         <td><%= link_to 'Edit', edit_card_path(card) %></td>
         <td><%= link_to 'Destroy', card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Card', new_card_path %>
+<%= link_to 'Add a Card', new_card_path, class: "btn btn-info btn-sm" %>

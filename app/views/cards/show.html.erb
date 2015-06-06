@@ -1,24 +1,36 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @card.name %>
-</p>
-
-<p>
-  <strong>Theme:</strong>
-  <%= @card.theme %>
-</p>
-
-<p>
-  <strong>Meaning:</strong>
-  <%= @card.meaning %>
-</p>
-
-<p>
-  <strong>Imagefile:</strong>
+<div class="row">
+  <div class="col-sm-3">
+  <%= image_tag @card.imagefile %><br>
   <%= @card.imagefile %>
-</p>
+  </div><!--col-sm-4-->
 
-<%= link_to 'Edit', edit_card_path(@card) %> |
-<%= link_to 'Back', cards_path %>
+   <div class="col-sm-9">
+
+
+    <h2>The <%= @card.name %> Card</h2>
+
+    <%= link_to 'Edit', edit_card_path(@card), class: "btn btn-default btn-xs" %> 
+<%= link_to 'Back', cards_path, class: "btn btn-default btn-xs" %>
+
+    <p>
+      <strong>Theme:</strong>
+      <%= @card.theme %>
+    </p>
+
+    <p>
+      <strong>Meaning:</strong>
+      <%= @card.meaning %>
+    </p>
+
+    <p>
+      <strong>Image File Name:</strong>
+      <%= @card.imagefile %>
+    </p>
+
+  </div><!--col-sm-8-->
+
+</div> <!--row-->
+
+
