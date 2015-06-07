@@ -76,6 +76,8 @@ gem "awesome_print"
 # annotate models with or schema
 gem "annotate"
 
+gem "font-awesome-rails"
+
 group :development do
   gem "quiet_assets" # quiet those assets down
 end
