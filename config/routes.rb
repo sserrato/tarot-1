@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'page/home'
+
+  get 'page/about'
+
   get 'spread/spread1'
 
   get 'spread/spread2'
