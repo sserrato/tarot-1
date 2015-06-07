@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'spread/spread1'
+
+  get 'spread/spread2'
+
+  get 'spread/spread3'
+
   devise_for :users
   resources :cards
   # The priority is based upon order of creation: first created -> highest priority.
