@@ -1,2 +1,21 @@
-<h1>Spread#spread1</h1>
-<p>Find me in app/views/spread/spread1.html.erb</p>
+<div class="row">
+  <div class="col-xs-12">
+    <h1 class="hometext sitename" style="margin-bottom: 150px;">Spread 1</h1>
+    <center><p class="btn btn-success btn-lg">Begin</p></center>
+  </div><!--col-xs-12-->
+</div><!--row-->
+
+<div class="row">
+  <div class="col-xs-12">
+  <table>
+    <tr>
+    <%= @cards.each do |pick| %>
+    <td><%= pick.name %></td>
+    <td><%= pick.meaning %></td>
+    <% end %>
+    </tr>
+  </table>
+    
+  </div><!--col-xs-12-->
+</div><!--row-->
+
