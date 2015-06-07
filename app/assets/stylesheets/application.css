@@ -15,10 +15,16 @@
  */
 
 body {
-    background-color: #1cd67d;
+    background-image: url("bg03.jpg");
+    background-size: 2000px;
+    background-position: top center;
   }
   /*TODO: find nice background pattern */
     
+.navbar {
+  border-radius: 0px;
+}
+
 .sitename {
   font-family: Ultra, serif;
   margin-bottom: 0px;
@@ -36,8 +42,8 @@ body {
 
 
 .container {
-  background-color: white;
   width: 90%;
+  background-color: white;
 }
 
 .cardholder {
