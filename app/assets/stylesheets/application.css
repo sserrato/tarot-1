@@ -18,26 +18,25 @@
  *= require font-awesome
  */
 
+
+/* Site-wide */
 body {
     background-image: url("bg03.jpg");
     background-size: 2000px;
     background-position: top center;
     background-attachment: fixed;
+    font-family: 'Quicksand', sans-serif;
   }
     
 .navbar {
   border-radius: 0px;
 }
 
-
-/* Site-wide */
-
-body {
-  font-family: 'Quicksand', sans-serif;
+.container {
+  height: 100%;
 }
 
-
-.container {
+.wrapper{
   width: 90%;
 }
 
@@ -47,22 +46,39 @@ body {
 }
 
 .row {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
+
+.spacer {
+  height: 50px;
+}
+
+
+footer {
+  color: #f1f1f1;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px 45px;
+  font-size: 70%;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: normal;
+}
+
+
 
 /* Homepage Stuff  */
 
 .hometext {
   color: white;
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 2px 8px black;
   text-align: center;
   margin-top: 70px;
   margin-bottom: 50px;
 }
+
 .sitename {
   font-family: Ultra, serif;
-  font-size: 5em;
-  margin-bottom: 0px;
+  font-size: 6em;
+  margin-bottom: 3%;
 }
 
 .tagline {
@@ -71,49 +87,36 @@ body {
   margin-top: 0px;
 }
 
-.choosereading {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  font-size: 2em;
-}
 
-.readingbuttonrow {
+
+
+
+/* Actual Readings stuff spread1.html */
+
+.third {
+  width: 30%;
+  float: left;
+  padding: 1%;
+  margin: 1%;
+  /* background-color: rgba(225, 225, 225, 0.5); */
   text-align: center;
-  color: white;
+    color: white;
+  text-shadow: 2px 2px 8px black;
+}
+
+.third h4 {
   font-family: 'Dancing Script', cursive;
-  font-size: 2em;
+  font-size: 2.5em;
 
 }
 
-.readingbutton {
-  padding: 5%;
-  border-radius: 50%;
-  background-color: purple;
-}
-
-img.readingbutton  {
+.third img {
   width: 100%;
-  max-width: 200px;
+  max-width: 150px;
+  box-shadow: 2px 2px 8px black;
+
+  
 }
-
-
-
-ul  {
-  list-style-type: none;
-  display: inline;
-
-}
-
-
-li.readingbutton  {
-  vertical-align: center;
-  list-style-type: none;
-  display: inline;
-}
-
-
-
-
 
 .cardholder {
   width: 150px;
@@ -134,6 +137,9 @@ li.readingbutton  {
 .col-xs-4 {
   text-align: center;
 }
+
+
+/* Cards Index */
 
 .cardsindex img {
   width: 50px;

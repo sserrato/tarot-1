@@ -1,21 +1,41 @@
 <div class="row">
-  <div class="col-xs-12">
-    <h1 class="hometext sitename" style="margin-bottom: 150px;">Spread 1</h1>
-    <center><p class="btn btn-success btn-lg">Begin</p></center>
-  </div><!--col-xs-12-->
+    <h1 class="hometext tagline" style="margin-bottom: 50px;">Your Results...</h1>
+  
+</div><!--row-->
+
+
+<div class="row">
+  <div class="third">
+    <h4>You</h4>
+  </div><!-- third-->
+  <div class="third">
+    <h4>The Other Person</h4>
+  </div><!-- third-->
+  <div class="third">
+    <h4>The Relationship</h4>
+  </div><!-- third-->
+
 </div><!--row-->
 
 <div class="row">
-  <div class="col-xs-12">
-  <table>
-    <tr>
-    <%= @cards.each do |pick| %>
-    <td><%= pick.name %></td>
-    <td><%= pick.meaning %></td>
-    <% end %>
-    </tr>
-  </table>
-    
-  </div><!--col-xs-12-->
+
+  <% @cards.sample(3).each do |card| %>
+    <div class="third">
+      <%= image_tag card.imagefile %>
+      <h3>The <%= card.name %></h3>
+      <p><strong>Theme:</strong> <%= card.theme %></p>
+      <p><strong>Meaning:</strong> <%= card.meaning %><p>
+      </div><!-- third-->
+      
+      <% end %>
+
 </div><!--row-->
+
+<div class="spacer">
+  <p>&nbsp;</p>
+</div><!--spacer-->
+
+    
+
+
 
