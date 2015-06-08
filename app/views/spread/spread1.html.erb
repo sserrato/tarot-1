@@ -18,38 +18,36 @@
 </div><!--row-->
 
 <div class="row">
-<% picksnames = [] %>
-<% picksmeanings = [] %>
-<% picksthemes = [] %>
 
-
-  <% @cards.sample(3).each do |card| %>
-  <% picksnames.push(card[:name]) %>
-  <% picksmeanings.push(card[:meaning]) %>
-  <% picksthemes.push(card[:theme]) %>
+  <% @reading.each do |cardobject| %>
+ 
     <div class="third">
-      <%= image_tag card.imagefile %>
-      <h3>The <%= card.name %></h3>
-      <p><strong>Theme:</strong> <%= card.theme %></p>
-      <p><strong>Meaning:</strong> <%= card.meaning %><p>
+      <%= image_tag cardobject.imagefile %>
+      <h3>The <%= cardobject.name %></h3>
+      <p><strong>Theme:</strong> <%= cardobject.theme %></p>
+      <p><strong>Meaning:</strong> <%= cardobject.meaning %><p>
       </div><!-- third-->
       
       <% end %>
 
 </div><!--row-->
 
+
 <div class="row">
   <div class="interpretations">
   <h1>What Does This All Mean?</h1>
-    <h3>The <%= picksnames[0] %>: Your Role in This Relationship</h3>
-    <p>The first card represents you (or what you want out of this relationship). The <%= picksnames[0] %> card represents <%= picksmeanings[0].downcase %>, and currently, you.</p>
-    <p>Take a moment to think about how your role in this relationship has a theme of <%= picksthemes[0].downcase %> and if that's a theme you feel is serving you.</p>
-    <h3>The <%= picksnames[1] %>: Your Partner in This Relationship</h3>
-    <p>The second card represents the "other" in this relationship (or what the other wants most dearly to experience in this relationship with you). The <%= picksnames[1] %> card represents <%= picksmeanings[1].downcase %>, and currently, your relationship "other."</p>
-    <p>Take a moment to think about how their role in this relationship has a theme of <%= picksthemes[1].downcase %> and how that may be impacting how they interact with you.</p>
-    <h3>The <%= picksnames[2] %>: The Relationship Itself</h3>
-    <p>The last card, the  <%= picksnames[2] %> card, represents the relationship itself. It embodies <%= picksmeanings[2].downcase %>, and currently, your relationship.</p>
-    <p>Take a moment to think about this relationship has a theme of <%= picksthemes[2].downcase %> and if that's a theme you'll intend to foster. Keep in mind, this is an intrepretation of your relationship as it currently stands. You can choose to continue on this path or to make changes.</p>
+
+    <h3>Your Role in This Relationship</h3>
+    <p>According to the <%= @reading[0].name %>, you are currently manifesting qualities like <%= @reading[0].meaning.downcase %> in this relationship.</p>
+    <p>Take a moment to think about these qualities you're bringing and in which ways they're working for or against you in this relationship.</p>
+    
+    <h3>Your Partner in This Relationship</h3>
+    <p>The <%= @reading[1].name %> card indicates that the "other" in this relationship is bringing the qualities of <%= @reading[1].meaning.downcase %> into this relationship with you.</p>
+    <p>Take a moment to think about how these qualities may be impacting your interactions together.</p>
+    
+    <h3>The Relationship Itself</h3>
+    <p>The last card, the <%= @reading[2].name %> card, indicates that the current theme of your relationship together is <%= @reading[2].theme %> and that, together, you're currently creating an environment based in concepts like <%= @reading[2].meaning.downcase %>.</p>
+    <p>Take a moment to think about this <%= @reading[2].theme.downcase %> theme and if that's a theme you're intending to foster. Keep in mind, this is an intrepretation of your relationship as it <em>currently</em> stands. You have the power to to continue on this path or to make changes and change your current path together.</p>
   </div><!--interpretations-->
 </div><!--row-->
 
@@ -65,9 +63,7 @@
 
   <div class="spacer">
   <p>&nbsp;</p>
-</div><!--spacer-->
-
-    
+</div><!--spacer-->    
 
 
 

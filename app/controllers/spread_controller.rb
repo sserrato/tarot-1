@@ -1,8 +1,12 @@
 class SpreadController < ApplicationController
-  @cards = Card.all
 
   def spread1
     @cards = Card.all
+
+    @reading = []
+    @cards.sample(3).each do |card|
+      @reading.push(card)
+    end
 
   end #spread1
 
