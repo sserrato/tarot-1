@@ -18,8 +18,15 @@
 </div><!--row-->
 
 <div class="row">
+<% picksnames = [] %>
+<% picksmeanings = [] %>
+<% picksthemes = [] %>
+
 
   <% @cards.sample(3).each do |card| %>
+  <% picksnames.push(card[:name]) %>
+  <% picksmeanings.push(card[:meaning]) %>
+  <% picksthemes.push(card[:theme]) %>
     <div class="third">
       <%= image_tag card.imagefile %>
       <h3>The <%= card.name %></h3>
@@ -31,7 +38,30 @@
 
 </div><!--row-->
 
+<div class="row">
+  <div class="interpretations">
+  <h1>What Does This All Mean?</h1>
+    <h2>Your Role in This Relationship</h2>
+    <p>The first card represents you (or what you want out of this relationship). The <%= picksnames[0] %> card represents <%= picksmeanings[0].downcase %>, and currently, you.</p>
+    <p>Take a moment to think about how your role in this relationship has a theme of <%= picksthemes[0].downcase %> and if that's a theme you feel is serving you.</p>
+    <h2>The Other in This Relationship</h2>
+    <p>The second card represents the "other" in this relationship (or what the other wants most dearly to experience in this relationship with you). The <%= picksnames[1] %> card represents <%= picksmeanings[1].downcase %>, and currently, your "other."</p>
+    <p>Take a moment to think about how their role in this relationship has a theme of <%= picksthemes[1].downcase %> and how that may be impacting them.</p>
+    <h2>The Relationship Itself</h2>
+    <p>The last card, the  <%= picksnames[1] %> card, represents the relationship itself. It embodies <%= picksmeanings[1].downcase %>, and currently, your relationship.</p>
+    <p>Take a moment to think about this relationship has a theme of <%= picksthemes[1].downcase %> and if that's a theme you'll intend to foster. Keep in mind, this is an intrepretation of your relationship as it currently stands. You can choose to continue on this path or to make changes.</p>
+  </div><!--interpretations-->
+</div><!--row-->
+
 <div class="spacer">
+  <p>&nbsp;</p>
+</div><!--spacer-->
+
+<div class="row">
+    <center><%= link_to "Do another reading", spread_spread1_path, class: "btn btn-success btn-lg" %></center>
+  </div><!--row-->
+
+  <div class="spacer">
   <p>&nbsp;</p>
 </div><!--spacer-->
 
