@@ -55,8 +55,8 @@ body {
 
 
 footer {
-  color: #f1f1f1;
-  background-color: rgba(0, 0, 0, 0.6);
+  color: gray;
+  background-color: rgba(0, 0, 0, 0.75);
   padding: 20px 45px;
   font-size: 70%;
   font-family: 'Quicksand', sans-serif;
@@ -113,9 +113,15 @@ footer {
 .third img {
   width: 100%;
   max-width: 150px;
+  box-shadow: 2px 2px 8px black;  
+}
+
+.interpretations {
+  background-color: rgba(225, 225, 225, 0.85);
+  padding: 2% 5%;
+  border-radius: 20px;
   box-shadow: 2px 2px 8px black;
 
-  
 }
 
 .cardholder {

@@ -41,15 +41,15 @@
 <div class="row">
   <div class="interpretations">
   <h1>What Does This All Mean?</h1>
-    <h2>Your Role in This Relationship</h2>
+    <h3>The <%= picksnames[0] %>: Your Role in This Relationship</h3>
     <p>The first card represents you (or what you want out of this relationship). The <%= picksnames[0] %> card represents <%= picksmeanings[0].downcase %>, and currently, you.</p>
     <p>Take a moment to think about how your role in this relationship has a theme of <%= picksthemes[0].downcase %> and if that's a theme you feel is serving you.</p>
-    <h2>The Other in This Relationship</h2>
-    <p>The second card represents the "other" in this relationship (or what the other wants most dearly to experience in this relationship with you). The <%= picksnames[1] %> card represents <%= picksmeanings[1].downcase %>, and currently, your "other."</p>
-    <p>Take a moment to think about how their role in this relationship has a theme of <%= picksthemes[1].downcase %> and how that may be impacting them.</p>
-    <h2>The Relationship Itself</h2>
-    <p>The last card, the  <%= picksnames[1] %> card, represents the relationship itself. It embodies <%= picksmeanings[1].downcase %>, and currently, your relationship.</p>
-    <p>Take a moment to think about this relationship has a theme of <%= picksthemes[1].downcase %> and if that's a theme you'll intend to foster. Keep in mind, this is an intrepretation of your relationship as it currently stands. You can choose to continue on this path or to make changes.</p>
+    <h3>The <%= picksnames[1] %>: Your Partner in This Relationship</h3>
+    <p>The second card represents the "other" in this relationship (or what the other wants most dearly to experience in this relationship with you). The <%= picksnames[1] %> card represents <%= picksmeanings[1].downcase %>, and currently, your relationship "other."</p>
+    <p>Take a moment to think about how their role in this relationship has a theme of <%= picksthemes[1].downcase %> and how that may be impacting how they interact with you.</p>
+    <h3>The <%= picksnames[2] %>: The Relationship Itself</h3>
+    <p>The last card, the  <%= picksnames[2] %> card, represents the relationship itself. It embodies <%= picksmeanings[2].downcase %>, and currently, your relationship.</p>
+    <p>Take a moment to think about this relationship has a theme of <%= picksthemes[2].downcase %> and if that's a theme you'll intend to foster. Keep in mind, this is an intrepretation of your relationship as it currently stands. You can choose to continue on this path or to make changes.</p>
   </div><!--interpretations-->
 </div><!--row-->
 
@@ -58,7 +58,9 @@
 </div><!--spacer-->
 
 <div class="row">
-    <center><%= link_to "Do another reading", spread_spread1_path, class: "btn btn-success btn-lg" %></center>
+    <center><h2 class="hometext" style="margin: 0px;">Do Another Reading?</h2>
+    <h3 class="teaser hometext" style="margin: 5px 0px 30px 0px;">Focus on that "other" then click the button below.</h3></center>
+    <center><%= link_to "Read for Another Relationship", spread_spread1_path, class: "btn btn-success btn-lg" %></center>
   </div><!--row-->
 
   <div class="spacer">
