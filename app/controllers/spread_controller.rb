@@ -5,7 +5,7 @@ class SpreadController < ApplicationController
 
     @reading = []
     @cards.sample(3).each do |card|
-      @reading.push(card)
+      @reading.push(card) #pushes 3 card objects into this instance array
     end
 
   end #spread1
