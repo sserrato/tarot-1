@@ -1,68 +1,145 @@
 <div class="row">
-    <h1 class="hometext tagline" style="margin-bottom: 50px;">Your Results...</h1>
-  
+  <div class="col-sm-12">
+    <h3 class="hometext">Click to turn over each card.</h3>
+  </div><!--col-sm-12--> 
 </div><!--row-->
 
 
 <div class="row">
-  <div class="third">
+  <div class="col-sm-4">
     <h4>You</h4>
-  </div><!-- third-->
-  <div class="third">
-    <h4>The Other Person</h4>
-  </div><!-- third-->
-  <div class="third">
+    <a href="#card1Modal" role="button" data-toggle="modal">
+    <div id="firstcard" class="cardback">
+      <%= image_tag @reading[0].imagefile, class: "firstcard-hidden" %>
+    </div>
+    </a>
+  </div><!-- col-sm-4-->
+
+  <div class="col-sm-4">
+    <h4>The Other</h4>
+    <a href="#card2Modal" role="button" data-toggle="modal">
+    <div id="secondcard" class="cardback">
+      <%= image_tag @reading[1].imagefile, class: "secondcard-hidden" %>
+    </div>
+    </a>
+  </div><!-- col-sm-4-->
+
+  <div class="col-sm-4">
     <h4>The Relationship</h4>
-  </div><!-- third-->
-
-</div><!--row-->
-
-<div class="row">
-
-  <% @reading.each do |cardobject| %>
- 
-    <div class="third">
-      <%= image_tag cardobject.imagefile %>
-      <h3>The <%= cardobject.name %></h3>
-      <p><strong>Theme:</strong> <%= cardobject.theme %></p>
-      <p><strong>Meaning:</strong> <%= cardobject.meaning %><p>
-      </div><!-- third-->
-      
-      <% end %>
+    <a href="#card3Modal" role="button" data-toggle="modal">
+    <div id="thirdcard" class="cardback">
+      <%= image_tag @reading[2].imagefile, class: "thirdcard-hidden" %>
+    </div>
+    </a>
+  </div><!-- col-sm-4-->
 
 </div><!--row-->
 
 
-<div class="row">
-  <div class="interpretations">
-  <h1>What Does This All Mean?</h1>
 
-    <h3>Your Role in This Relationship</h3>
-    <p>According to the <%= @reading[0].name %>, you are currently manifesting qualities like <%= @reading[0].meaning.downcase %> in this relationship.</p>
-    <p>Take a moment to think about these qualities you're bringing and in which ways they're working for or against you in this relationship.</p>
-    
-    <h3>Your Partner in This Relationship</h3>
-    <p>The <%= @reading[1].name %> card indicates that the "other" in this relationship is bringing the qualities of <%= @reading[1].meaning.downcase %> into this relationship with you.</p>
-    <p>Take a moment to think about how these qualities may be impacting your interactions together.</p>
-    
-    <h3>The Relationship Itself</h3>
-    <p>The last card, the <%= @reading[2].name %> card, indicates that the current theme of your relationship together is <%= @reading[2].theme %> and that, together, you're currently creating an environment based in concepts like <%= @reading[2].meaning.downcase %>.</p>
-    <p>Take a moment to think about this <%= @reading[2].theme.downcase %> theme and if that's a theme you're intending to foster. Keep in mind, this is an intrepretation of your relationship as it <em>currently</em> stands. You have the power to to continue on this path or to make changes and change your current path together.</p>
-  </div><!--interpretations-->
-</div><!--row-->
+
+
+<!-- card1Modal -->
+<div class="modal fade" id="card1Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">The <%= @reading[0].name %> Card Represents...</h4>
+      </div>
+      <div class="modal-body">
+      <%= image_tag @reading[0].imagefile %> 
+      <h3>Your Role in This Relationship</h3>
+      <p>According to the <%= @reading[0].name %>, you are currently manifesting qualities like <%= @reading[0].meaning.downcase %> in this relationship.</p>
+      <p>Take a moment to think about these qualities you're bringing and in which ways they're working for or against you in this relationship.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- card1Modal -->
+<div class="modal fade" id="card2Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">The <%= @reading[0].name %> Card Represents...</h4>
+      </div>
+      <div class="modal-body">
+      <%= image_tag @reading[1].imagefile %> 
+      <h3>Your Partner in This Relationship</h3>
+      <p>The <%= @reading[1].name %> card indicates that the "other" in this relationship is bringing the qualities of <%= @reading[1].meaning.downcase %> into this relationship with you.</p>
+      <p>Take a moment to think about how these qualities may be impacting your interactions together.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- card3Modal -->
+<div class="modal fade" id="card3Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">The <%= @reading[0].name %> Card Represents...</h4>
+      </div>
+      <div class="modal-body">
+      <%= image_tag @reading[2].imagefile %> 
+      <h3>The Relationship Itself</h3>
+      <p>The last card, the <%= @reading[2].name %> card, indicates that the current theme of your relationship together is <%= @reading[2].theme %> and that, together, you're currently creating an environment based in concepts like <%= @reading[2].meaning.downcase %>.</p>
+      <p>Take a moment to think about this <%= @reading[2].theme.downcase %> theme and if that's a theme you're intending to foster. Keep in mind, this is an intrepretation of your relationship as it <em>currently</em> stands. You have the power to to continue on this path or to make changes and change your current path together.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <div class="spacer">
   <p>&nbsp;</p>
 </div><!--spacer-->
 
 <div class="row">
+  <div class="col-sm-12">
     <center><h2 class="hometext" style="margin: 0px;">Do Another Reading?</h2>
-    <h3 class="teaser hometext" style="margin: 5px 0px 30px 0px;">Focus on that "other" then click the button below.</h3></center>
-    <center><%= link_to "Read for Another Relationship", spread_spread1_path, class: "btn btn-success btn-lg" %></center>
-  </div><!--row-->
+    <h3 class="teaser hometext" style="margin: 5px 0px 30px 0px;">Take a moment to concentrate on another relationship in your life, then click the button below.</h3></center>
+    <center><%= button_to "Begin", spread_spread1_path, :class => "btn btn-primary btn-lg", :method => :get %></center>
+  </div><!--col-sm-12-->
+</div><!--row-->
 
   <div class="spacer">
   <p>&nbsp;</p>
-</div><!--spacer-->    
+</div><!--spacer--> 
 
+</div> <!-- closes container -->
+
+  <footer>
+    <p><strong>Disclaimer:</strong> This site is intended for entertainment only. It is not intended to be a replacement for real advice from a trained therapist, physician, laywer, judge, or anybody. It's just a game, you dig? </p>
+  </footer>  
+
+<!-- Javascripts -->
+<script type="text/javascript">
+  jQuery(document).ready(function(){
+
+    $("#firstcard").on("click", function() {
+      $('.firstcard-hidden').css("display", "block");
+    }); //firstcard
+
+    $("#secondcard").on("click", function() {
+      $('.secondcard-hidden').css("display", "block");
+    }); //secondcard
+
+    $("#thirdcard").on("click", function() {
+      $('.thirdcard-hidden').css("display", "block");
+    }); //thirdcard
+  }); //jQuery(document)
+</script>
 
