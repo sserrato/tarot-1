@@ -21,7 +21,7 @@
 
 /* Site-wide */
 body {
-    background-image: url("bg03.jpg");
+    background-image: image-url("bg03.jpg");
     background-size: 2000px;
     background-position: top center;
     background-attachment: fixed;
@@ -124,7 +124,7 @@ footer {
 .cardback {
   height: 250px;
   width: 150px;
-  background-image: url("00-rear.png");
+  background-image: image-url("00-rear.png");
   box-shadow: 2px 2px 8px black;
   text-align: center;
   margin: 0 auto;
