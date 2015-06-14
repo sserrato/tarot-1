@@ -1,39 +1,41 @@
 <div class="row">
-    <h1 class="hometext tagline" style="margin-bottom: 50px;">Your Results...</h1>
-    <h4 class="hometext">Click to turn over each card.</h4> 
-  
+  <div class="col-sm-12">
+    <h3 class="hometext">Click to turn over each card.</h3>
+  </div><!--col-sm-12--> 
 </div><!--row-->
 
 
 <div class="row">
-  <div class="third">
+  <div class="col-sm-4">
     <h4>You</h4>
     <a href="#card1Modal" role="button" data-toggle="modal">
     <div id="firstcard" class="cardback">
       <%= image_tag @reading[0].imagefile, class: "firstcard-hidden" %>
     </div>
     </a>
-  </div><!-- third-->
+  </div><!-- col-sm-4-->
 
-  <div class="third">
+  <div class="col-sm-4">
     <h4>The Other</h4>
     <a href="#card2Modal" role="button" data-toggle="modal">
     <div id="secondcard" class="cardback">
       <%= image_tag @reading[1].imagefile, class: "secondcard-hidden" %>
     </div>
     </a>
-  </div><!-- third-->
+  </div><!-- col-sm-4-->
 
-  <div class="third">
+  <div class="col-sm-4">
     <h4>The Relationship</h4>
     <a href="#card3Modal" role="button" data-toggle="modal">
     <div id="thirdcard" class="cardback">
       <%= image_tag @reading[2].imagefile, class: "thirdcard-hidden" %>
     </div>
     </a>
-  </div><!-- third-->
+  </div><!-- col-sm-4-->
 
 </div><!--row-->
+
+
 
 
 
@@ -106,15 +108,38 @@
 </div><!--spacer-->
 
 <div class="row">
+  <div class="col-sm-12">
     <center><h2 class="hometext" style="margin: 0px;">Do Another Reading?</h2>
-    <h3 class="teaser hometext" style="margin: 5px 0px 30px 0px;">Focus on that "other" then click the button below.</h3></center>
-    <center><%= link_to "Read for Another Relationship", spread_spread1_path, class: "btn btn-success btn-lg" %></center>
-  </div><!--row-->
+    <h3 class="teaser hometext" style="margin: 5px 0px 30px 0px;">Take a moment to concentrate on another relationship in your life, then click the button below.</h3></center>
+    <center><%= button_to "Begin", spread_spread1_path, :class => "btn btn-primary btn-lg", :method => :get %></center>
+  </div><!--col-sm-12-->
+</div><!--row-->
 
   <div class="spacer">
   <p>&nbsp;</p>
-</div><!--spacer-->   
+</div><!--spacer--> 
+
+</div> <!-- closes container -->
+
+  <footer>
+    <p><strong>Disclaimer:</strong> This site is intended for entertainment only. It is not intended to be a replacement for real advice from a trained therapist, physician, laywer, judge, or anybody. It's just a game, you dig? </p>
+  </footer>  
 
 <!-- Javascripts -->
+<script type="text/javascript">
+  jQuery(document).ready(function(){
 
+    $("#firstcard").on("click", function() {
+      $('.firstcard-hidden').css("display", "block");
+    }); //firstcard
+
+    $("#secondcard").on("click", function() {
+      $('.secondcard-hidden').css("display", "block");
+    }); //secondcard
+
+    $("#thirdcard").on("click", function() {
+      $('.thirdcard-hidden').css("display", "block");
+    }); //thirdcard
+  }); //jQuery(document)
+</script>
 

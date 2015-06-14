@@ -15,18 +15,4 @@
 //= require turbolinks
 //= require_tree .
 
-jQuery(document).ready(function(){
 
-  $("#firstcard").on("click", function() {
-    $('.firstcard-hidden').css("display", "block");
-  }); //firstcard
-
-  $("#secondcard").on("click", function() {
-    $('.secondcard-hidden').css("display", "block");
-  }); //secondcard
-
-  $("#thirdcard").on("click", function() {
-    $('.thirdcard-hidden').css("display", "block");
-  }); //thirdcard
-
-});

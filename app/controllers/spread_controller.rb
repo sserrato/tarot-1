@@ -16,6 +16,7 @@ class SpreadController < ApplicationController
     @mirrorreading = []
     @cards.sample(8).each do |card|
       @mirrorreading.push(card) #pushes 3 card objects into this instance array
+    end #each do
   end #spread2
 
   def spread3
