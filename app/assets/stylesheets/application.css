@@ -116,6 +116,30 @@ footer {
   box-shadow: 2px 2px 8px black;  
 }
 
+.cardback {
+  height: 260px;
+  width: 150px;
+  background-image: url("00-rear.png");
+  box-shadow: 2px 2px 8px black;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.firstcard-hidden {
+  display: none;
+  box-shadow: none;
+}
+
+.secondcard-hidden {
+  display: none;
+  box-shadow: none;
+}
+
+.thirdcard-hidden {
+  display: none;
+  box-shadow: none;
+}
+
 .interpretations {
   background-color: rgba(225, 225, 225, 0.85);
   padding: 2% 5%;
@@ -124,25 +148,18 @@ footer {
 
 }
 
-.cardholder {
-  width: 150px;
-  height: 260px;
-  text-align: center;
-  background-image: url("00-rear.png");
-  border-radius: 10px;
-  color: white;
-  font-family: 'Dancing Script', cursive;
-
-}
-
-.cardholder img {
-  width: 100%;
-  border-radius: 10px;
-}
-
 .col-xs-4 {
   text-align: center;
 }
+
+/* Reading Modals */
+.modal-body img {
+  float: left;
+  margin-right: 2em;
+  box-shadow: 2px 2px 5px gray;
+}
+
+
 
 
 /* Cards Index */
