@@ -6,14 +6,14 @@ class SpreadControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get spread2" do
-    get :spread2
-    assert_response :success
-  end
+  # test "should get spread2" do
+  #   get :spread2
+  #   assert_response :success
+  # end
 
-  test "should get spread3" do
-    get :spread3
-    assert_response :success
-  end
+  # test "should get spread3" do
+  #   get :spread3
+  #   assert_response :success
+  # end
 
 end
