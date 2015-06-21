@@ -1,1 +1,192 @@
-    <h4>Spread 2</h4>
+<div class="row">
+  <div class="col-sm-12">
+    <h1 class="reading">Confidence Boost Reading</h1>
+    <h2 class="reading">Figure out what's driving your insecurities and how to kick them to the curb so you can move forward with your awesome, confident self.</h2>
+    <h2 class="reading">Click to turn over each card.</h2>
+  </div><!--col-sm-12--> 
+</div><!--row-->
+
+
+<div class="row">
+  <div class="col-sm-12 reading">
+  <h4>The Root of Your Insecurity</h4>
+    <a href="#card1Modal" role="button" data-toggle="modal">
+    <div id="firstcard" class="cardback">
+      <%= image_tag @confidencereading[0].imagefile, class: "firstcard-hidden" %></div></a>
+  </div><!--col-->
+</div><!--row-->
+
+<div class="row">
+  <div class="col-sm-12 reading">
+  <h4>Your Main Sources of Power</h4>
+  </div><!--12-->
+  <div class="col-sm-3">
+  <p>&nbsp;</p>
+  </div>
+  <div class="col-sm-3">
+    <a href="#card2Modal" role="button" data-toggle="modal">
+    <div id="secondcard" class="cardback">
+      <%= image_tag @confidencereading[1].imagefile, class: "secondcard-hidden" %></div></a>
+  </div><!--col-->
+
+  <div class="col-sm-3">
+    <a href="#card3Modal" role="button" data-toggle="modal">
+    <div id="thirdcard" class="cardback">
+      <%= image_tag @confidencereading[2].imagefile, class: "thirdcard-hidden" %></div></a>
+  </div><!--col-->
+
+  <div class="col-sm-3">
+  <p>&nbsp;</p>
+  </div>
+
+</div><!--row-->
+
+<div class="row">
+  <div class="col-sm-12 reading">
+  <h4>Steps to Take Right Now</h4>
+    <a href="#card4Modal" role="button" data-toggle="modal">
+    <div id="fourthcard" class="cardback">
+      <%= image_tag @confidencereading[0].imagefile, class: "fourthcard-hidden" %></div></a>
+  </div><!--col-->
+</div><!--row-->
+
+<div class="row">
+  <div class="col-sm-4">
+  
+  </div><!--col-->
+</div><!--row-->
+
+<div class="row">
+  <div class="col-sm-4">
+  
+  </div><!--col-->
+</div><!--row-->
+
+<!-- card1Modal -->
+<div class="modal fade" id="card1Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">The <%= @confidencereading[0].name %> Card Represents...</h4>
+      </div>
+      <div class="modal-body">
+      <%= image_tag @confidencereading[0].imagefile %> 
+      <h3>The Root of Your Insecurities</h3>
+      <p>According to the <%= @confidencereading[0].name %> card, you've got a bunch of noise in your head about <%= @confidencereading[0].meaning.downcase %> that's currently undercutting your sense of confidence.</p>
+      <p>Take a moment to think about how these kinds of thoughts are holding you back and keeping you from shining like the radiant person you are. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- card2Modal -->
+<div class="modal fade" id="card2Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">The <%= @confidencereading[1].name %> Card Represents...</h4>
+      </div>
+      <div class="modal-body">
+      <%= image_tag @confidencereading[1].imagefile %> 
+      <h3>Your First Source Power</h3>
+      <p>The <%= @confidencereading[1].name %> card indicates that your first source of power comes from a theme of <%= @confidencereading[1].theme %>. You really shine when you optimize your relationship with concepts like <%= @confidencereading[1].meaning.downcase %>.</p>
+      <p>Take a moment to think about ways in which these concepts have strengthened your sense of confidence in the past. Keep in mind, your powers don't always come from obvious places. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- card3Modal -->
+<div class="modal fade" id="card3Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">The <%= @confidencereading[2].name %> Card Represents...</h4>
+      </div>
+      <div class="modal-body">
+      <%= image_tag @confidencereading[2].imagefile %> 
+      <h3>Your Second Source of Power</h3>
+      <p>The <%= @confidencereading[2].name %> card indicates your second source of power comes from a theme of <%= @confidencereading[2].theme %>. Your confidence is strong when you optimize your relationship with concepts like <%= @confidencereading[2].meaning.downcase %>.</p>
+      <p>Take a moment to think about ways in which your experiences with these concepts can strengthen your sense of confidence today and in the future.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- card4Modal -->
+<div class="modal fade" id="card4Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">The <%= @confidencereading[3].name %> Card Represents...</h4>
+      </div>
+      <div class="modal-body">
+      <%= image_tag @confidencereading[3].imagefile %> 
+      <h3>Steps You Can Take Right Now</h3>
+      <p>It's time to get your mojo back and the <%= @confidencereading[3].name %> card is telling you how to do it. You need to embrace a theme of <%= @confidencereading[3].theme %> and take action towards <%= @confidencereading[3].meaning.downcase %>.</p>
+      <p>So step to it! Get active with the concept of <%= @confidencereading[3].theme %> to unblock your powers of <%= @confidencereading[1].theme %> and <%= @confidencereading[2].theme %>, so you can kick those insecurities to the curb.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="spacer">
+  <p>&nbsp;</p>
+</div><!--spacer-->
+
+
+<div class="row">
+  <div class="col-sm-12">
+    <center><%= button_to "New Confidence Boost Reading", spread_spread2_path, :class => "btn btn-primary", :method => :get %></center>
+  </div><!--col-sm-12-->
+</div><!--row-->
+
+  <div class="spacer">
+  <p>&nbsp;</p>
+</div><!--spacer--> 
+
+</div> <!-- closes container -->
+
+  <footer>
+    <p><strong>Disclaimer:</strong> This site is intended for entertainment only. It is not intended to be a replacement for real advice from a trained therapist, physician, laywer, judge, or anybody. It's just a game, you dig? </p>
+  </footer>  
+
+<!-- Javascripts -->
+<script type="text/javascript">
+  jQuery(document).ready(function(){
+
+    $("#firstcard").on("click", function() {
+      $('.firstcard-hidden').css("display", "block");
+    }); //firstcard
+
+    $("#secondcard").on("click", function() {
+      $('.secondcard-hidden').css("display", "block");
+    }); //secondcard
+
+    $("#thirdcard").on("click", function() {
+      $('.thirdcard-hidden').css("display", "block");
+    }); //thirdcard
+
+    $("#fourthcard").on("click", function() {
+      $('.fourthcard-hidden').css("display", "block");
+    }); //fourthcard
+  }); //jQuery(document)
+</script>
+
