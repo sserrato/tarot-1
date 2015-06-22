@@ -53,8 +53,8 @@ body {
 }
 
 .btn-lg {
-  font-size: 2.5em;
-  padding: 15px 20px;
+  font-size: 2em;
+  padding: 13px 18px;
 }
 
 
@@ -96,6 +96,13 @@ footer {
   margin-bottom: 1em;
 }
 
+.homeicon {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 8px black;
+}
+
 
 
 
@@ -117,6 +124,30 @@ footer {
   width: 100%;
   max-width: 150px;
   box-shadow: 2px 2px 8px black;  
+}
+
+.reading h4 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5em;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 8px black;
+}
+
+h1.reading {
+  font-family: Ultra, serif;
+  font-size: 2.5em;
+  margin-bottom: 2%;
+  color: white;
+  text-shadow: 2px 2px 8px black;
+  text-align: center;
+}
+
+h2.reading {
+  font-size: 1.75em;
+  color: white;
+  text-shadow: 2px 2px 8px black;
+  text-align: center;
 }
 
 .cardback {
@@ -144,6 +175,30 @@ footer {
   box-shadow: none;
 }
 
+.fourthcard-hidden {
+  display: none;
+  box-shadow: none;
+}
+
+.fifthcard-hidden {
+  display: none;
+  box-shadow: none;
+}
+
+.sixthcard-hidden {
+  display: none;
+  box-shadow: none;
+}
+
+.seventhcard-hidden {
+  display: none;
+  box-shadow: none;
+}
+
+.eighthcard-hidden {
+  display: none;
+  box-shadow: none;
+}
 
 /* Reading Modals */
 .modal-body img {
@@ -176,6 +231,9 @@ footer {
   max-width: 100%;
   box-shadow: 2px 2px 8px black;
   margin-bottom: 10px;
+}
+
+.circle {
   border-radius: 50%;
 }
 

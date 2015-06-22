@@ -1,6 +1,8 @@
 <div class="row">
   <div class="col-sm-12">
-    <h3 class="hometext">Click to turn over each card.</h3>
+    <h1 class="reading">Relationship Check-In Reading</h1>
+    <h2 class="reading">Get a quick snapshot on the state of your relationship with another person or entity.</h2>
+    <h2 class="reading">Click to turn over each card.</h2>
   </div><!--col-sm-12--> 
 </div><!--row-->
 
@@ -50,7 +52,7 @@
       <div class="modal-body">
       <%= image_tag @reading[0].imagefile %> 
       <h3>Your Role in This Relationship</h3>
-      <p>According to the <%= @reading[0].name %>, you are currently manifesting qualities like <%= @reading[0].meaning.downcase %> in this relationship.</p>
+      <p>According to the <%= @reading[0].name %> card, you are currently manifesting qualities like <%= @reading[0].meaning.downcase %> in this relationship.</p>
       <p>Take a moment to think about these qualities you're bringing and in which ways they're working for or against you in this relationship.</p>
       </div>
       <div class="modal-footer">
@@ -110,9 +112,7 @@
 
 <div class="row">
   <div class="col-sm-12">
-    <center><h2 class="hometext" style="margin: 0px;">Do Another Reading?</h2>
-    <h3 class="teaser hometext" style="margin: 5px 0px 30px 0px;">Take a moment to concentrate on another relationship in your life, then click the button below.</h3></center>
-    <center><%= button_to "New Reading", spread_spread1_path, :class => "btn btn-primary btn-lg", :method => :get %></center>
+    <center><%= button_to "New Relationship Reading", spread_spread1_path, :class => "btn btn-primary", :method => :get %></center>
   </div><!--col-sm-12-->
 </div><!--row-->
 

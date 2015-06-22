@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-Card.create(arcana: 'ma', name: 'Fool', theme: 'Beginning', meaning: 'Beginning, innocence, journey, spontaneity, and free spirit', imagefile: 'ma00-fool.jpg')
+Card.create(arcana: 'ma', name: 'Fool', theme: 'Beginning', meaning: 'Beginning, innocence, foolishness, journey, spontaneity, and free spirit', imagefile: 'ma00-fool.jpg')
 Card.create(arcana: 'ma', name: 'Magician', theme: 'Intention', meaning: 'Intention, focus, will, power, skill, purpose, creativity, and resourcefulness', imagefile: 'ma01-magician.jpg')
 Card.create(arcana: 'ma', name: 'High Priestess', theme: 'Intuition', meaning: 'Intuition, higher powers, wisdom, secrets, and subconscious mind', imagefile: 'ma02-highpriestess.jpg')
 Card.create(arcana: 'ma', name: 'Empress', theme: 'Fertility', meaning: 'Fertility, mother, lover, nature, protection, and abundance', imagefile: 'ma03-empress.jpg')
