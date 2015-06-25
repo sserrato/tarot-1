@@ -25,5 +25,8 @@ module Tarot
 
     # config/application.rb
     config.assets.initialize_on_precompile = false
+
+    # trying to solve a preconfile issue
+    config.assets.enabled = true
   end
 end
