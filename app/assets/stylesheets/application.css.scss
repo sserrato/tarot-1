@@ -231,22 +231,19 @@ h2.reading {
 
 }
 
-.col-sm-3 img {
+.headshot {
+  border-radius: 50%;
   max-width: 100%;
   box-shadow: 2px 2px 8px black;
   margin-bottom: 10px;
 }
-
-.circle {
-  border-radius: 50%;
-}
-
 
 .fa {
   color: white;
   margin: 0px 8px;
   background-color: transparent;
 }
+
 a:hover {
   background-color: transparent;
 }
