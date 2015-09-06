@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   get 'tinytarot' => 'page#tinytarot'
 
+  get 'page/tinytarot'
+
   get 'spread/spread1'
 
   get 'spread/spread2'
