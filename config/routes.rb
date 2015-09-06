@@ -3,6 +3,11 @@ Rails.application.routes.draw do
 
   get 'page/about'
 
+  #get 'page/downloads'
+  get 'downloads' => 'page#downloads'
+
+  get 'tinytarot' => 'page#tinytarot'
+
   get 'spread/spread1'
 
   get 'spread/spread2'

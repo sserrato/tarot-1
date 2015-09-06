@@ -4,4 +4,10 @@ class PageController < ApplicationController
 
   def about
   end
+
+  def downloads
+  end
+
+  def tinytarot
+  end
 end
