@@ -1,20 +1,27 @@
 Rails.application.routes.draw do
   get 'page/home'
 
-  get 'page/about'
+  #get 'page/about'
+  get 'about' => 'page#about'
 
   #get 'page/downloads'
   get 'downloads' => 'page#downloads'
 
   get 'tinytarot' => 'page#tinytarot'
-
   get 'page/tinytarot'
 
+  get 'thankyou' => 'page#thankyou'
+
+  get 'contribute' => 'page#contribute'
+
   get 'spread/spread1'
+  get 'relationshipcheckin' => 'spread#spread1'
 
   get 'spread/spread2'
+  get 'confidenceboost' => 'spread#spread2'
 
   get 'spread/spread3'
+  get 'conflictresolution' => 'spread#spread3'
 
   resources :cards
   # The priority is based upon order of creation: first created -> highest priority.
