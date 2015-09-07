@@ -261,10 +261,29 @@ a:hover {
 }
 
 
-
 /* Cards Index */
 
 .cardsindex img {
   width: 50px;
   margin-right: 20px;
 }
+
+
+/* Media Queries */
+@media screen and (max-device-width: 768px) {
+
+  .sitename {
+    font-size: 5em;
+  }
+
+  .tagline {
+    font-size: 3em;
+    margin-bottom: -1.5em;
+  }
+
+  .homeicon {
+    text-align: center;
+    width: 100%;
+    margin-top: 3.5em;
+  }
+} /* closes media query */
