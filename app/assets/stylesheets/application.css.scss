@@ -271,7 +271,7 @@ a:hover {
 
 
 /* Media Queries */
-@media screen and (max-device-width: 768px) {
+@media only screen and (max-width : 768px) {
 
   .sitename {
     font-size: 5em;
