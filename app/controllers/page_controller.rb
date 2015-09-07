@@ -10,4 +10,10 @@ class PageController < ApplicationController
 
   def tinytarot
   end
+
+  def thankyou
+  end
+
+  def contribute
+  end
 end
