@@ -212,15 +212,6 @@ h2.reading {
   margin-bottom: 20px;
 }
 
-/* TinyTarot Page */
-.salespics {
-  width: 100%;
-}
-
-.salespics img {
-  width: 100%;
-}
-
 /* Downloads Page */
 
 
@@ -245,7 +236,6 @@ h2.reading {
   text-align: center;
   color: white;
   text-shadow: 2px 2px 8px black;
-
 }
 
 .headshot {
@@ -253,6 +243,10 @@ h2.reading {
   max-width: 100%;
   box-shadow: 2px 2px 8px black;
   margin-bottom: 10px;
+}
+
+.col-sm-9 img {
+  width: 100%;
 }
 
 .fa {
