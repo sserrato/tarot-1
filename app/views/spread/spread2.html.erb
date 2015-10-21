@@ -56,7 +56,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
         <h4 class="modal-title" id="myModalLabel">The <%= @confidencereading[0].name %> Card Represents...</h4>
       </div>
       <div class="modal-body">
@@ -64,20 +64,17 @@
       <h3>The Root of Your Insecurities</h3>
       <p>According to the <%= @confidencereading[0].name %> card, you've got a bunch of noise in your head about <%= @confidencereading[0].meaning.downcase %> that's currently undercutting your sense of confidence.</p>
       <p>Take a moment to think about how these kinds of thoughts are holding you back and keeping you from shining like the radiant person you are. </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+      </div><!-- modal body -->
+    </div><!-- modal content -->
+  </div><!-- modal dialog -->
+</div><!-- modal -->
 
 <!-- card2Modal -->
 <div class="modal fade" id="card2Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
         <h4 class="modal-title" id="myModalLabel">The <%= @confidencereading[1].name %> Card Represents...</h4>
       </div>
       <div class="modal-body">
@@ -85,9 +82,6 @@
       <h3>Your First Source Power</h3>
       <p>The <%= @confidencereading[1].name %> card indicates that your first source of power comes from a theme of <%= @confidencereading[1].theme %>. You really shine when you optimize your relationship with concepts like <%= @confidencereading[1].meaning.downcase %>.</p>
       <p>Take a moment to think about ways in which these concepts have strengthened your sense of confidence in the past. Keep in mind, your powers don't always come from obvious places. </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -98,7 +92,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
         <h4 class="modal-title" id="myModalLabel">The <%= @confidencereading[2].name %> Card Represents...</h4>
       </div>
       <div class="modal-body">
@@ -106,9 +100,6 @@
       <h3>Your Second Source of Power</h3>
       <p>The <%= @confidencereading[2].name %> card indicates your second source of power comes from a theme of <%= @confidencereading[2].theme %>. Your confidence is strong when you optimize your relationship with concepts like <%= @confidencereading[2].meaning.downcase %>.</p>
       <p>Take a moment to think about ways in which your experiences with these concepts can strengthen your sense of confidence today and in the future.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -119,7 +110,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
         <h4 class="modal-title" id="myModalLabel">The <%= @confidencereading[3].name %> Card Represents...</h4>
       </div>
       <div class="modal-body">
@@ -127,9 +118,6 @@
       <h3>Steps You Can Take Right Now</h3>
       <p>It's time to get your mojo back and the <%= @confidencereading[3].name %> card is telling you how to do it. You need to embrace a theme of <%= @confidencereading[3].theme %> and take action towards <%= @confidencereading[3].meaning.downcase %>.</p>
       <p>So step to it! Get active with the concept of <%= @confidencereading[3].theme %> to unblock your powers of <%= @confidencereading[1].theme %> and <%= @confidencereading[2].theme %>, so you can kick those insecurities to the curb.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
