@@ -1,5 +1,7 @@
 # README
 
+[![Build Status](https://travis-ci.org/lortza/tarot.svg?branch=master)](https://travis-ci.org/lortza/tarot)
+
 * Ruby version 2.2.1
 * Rails version 4.2.1
 
