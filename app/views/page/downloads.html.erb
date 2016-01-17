@@ -1,28 +1,41 @@
 <div class="row">
   <div class="col-sm-3">
+  <%= image_tag 'anne-richardson.png', class: "headshot" %>
+  <h4>Anne Richardson</h4>
+  <p><a href="https://www.facebook.com/anne.richardson" target="_blank"><i class="fa fa-facebook fa-lg"></i></a> 
+    
+  <a href="https://www.linkedin.com/in/localflavor" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a> 
 
-  <a href="https://www.thegamecrafter.com/games/tiny-tarot" target="_blank" alt="Tiny Tarot Card Game by Anne Richardson"><%= image_tag 'tinytarot-ad.png', class: "ad" %></a>
-  <h4>Get Yourself this Deck of Learning Cards I Made</h4>
+  <a href="https://github.com/lortza" target="_blank"><i class="fa fa-github fa-lg"></i></a> 
+
+  <a href="https://twitter.com/lortz" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></p>
 
 
   </div><!-- col-sm-3-->
 
-  <div class="col-sm-9 white-bg">
-    <div>
-      <h1>Tiny Tarot Downloads</h1>
-      <p>Download guided reading spreads to make your readings easier. Each page was designed to fit the deck of Tiny Tarot cards you've already purchased. If you haven't purchased them yet, you can <a href="https://www.thegamecrafter.com/games/tiny-tarot" target="_blank" alt="Tiny Tarot">buy them here.</a></p>
-      <ul> 
-      <li><a href="https://dl.dropboxusercontent.com/u/4051110/Tarot%20Spreads/tarotspreads-3-cards-relationships.pdf" target="_blank" alt = "Download this Spread">Relationship Status Snapshot Reading</a></li>
-      <li><a href="https://dl.dropboxusercontent.com/u/4051110/Tarot%20Spreads/tarotspreads-7-cards-relationships.pdf" target="_blank" alt = "Download this Spread">Deeper Look into a Relationship Reading</a></li>
-      <li><a href="https://dl.dropboxusercontent.com/u/4051110/Tarot%20Spreads/tarotspreads-biggerpicture.pdf" target="_blank" alt = "Download this Spread">Bigger Picture Check-In Reading</a></li> 
-      <li><a href="https://dl.dropboxusercontent.com/u/4051110/Tarot%20Spreads/tarotspreads-celticcross.pdf" target="_blank" alt = "Download this Spread">Traditional Celtic Cross Reading</a></li>
-      <li><a href="https://dl.dropboxusercontent.com/u/4051110/Tarot%20Spreads/tarotspreads-confidence.pdf" target="_blank" alt = "Download this Spread">Confidence Boost Reading</a></li>
-      <li><a href="https://dl.dropboxusercontent.com/u/4051110/Tarot%20Spreads/tarotspreads-conflict.pdf" target="_blank" alt = "Download this Spread">Conflict Resolution Reading</a></li>
-      <li><a href="https://dl.dropboxusercontent.com/u/4051110/Tarot%20Spreads/tarotspreads-should.pdf" target="_blank" alt = "Download this Spread">The "Should I Do It?" Reading</a></li>
-      <li><a href="https://dl.dropboxusercontent.com/u/4051110/Tarot%20Spreads/tarotspreads-ALL.pdf" target="_blank" alt = "Download this Spread">All Reading Spreads in one PDF</a></li>
-      </ul>
-      <p> </p>
+  <div class="col-sm-9">
+    <div class="about padding">
+      <h1>Select Your Tarot Set</h1>
+      <div class="col-sm-6">
+         <div class="panel">
+           <div class="logo-holder">
+             <%= image_tag 'tinytarot-logo.png' %> 
+           </div> <!-- logo-holder -->
+             
+           <center><%= button_to "Download", "https://dl.dropboxusercontent.com/u/4051110/Tarot%20Spreads/tarotspreads-ALL.pdf", :class => "btn btn-primary", target: "_blank", :method => :get %></center>
+         </div> <!-- panel -->
+      </div> <!-- col-sm-6 -->
+      <div class="col-sm-6">
+         <div class="panel">
+         <div class="logo-holder">
+            <%= image_tag 'nolatarot-logo.png' %>
+         </div> <!-- logo-holder -->
+           
+           <center><%= button_to "Download", "https://dl.dropboxusercontent.com/u/4051110/Tarot%20Spreads/nolatarotspreads-ALL.pdf", :class => "btn btn-primary", target: "_blank", :method => :get %></center>
+         </div> <!-- panel -->
+      </div> <!-- col-sm-6 -->
 
+        
     </div><!--about-->  
 
   </div><!-- col-sm-9-->
