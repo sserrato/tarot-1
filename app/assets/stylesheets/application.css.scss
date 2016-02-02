@@ -271,9 +271,17 @@ a:hover {
 .panel {
   margin-top: 20px;
   padding: 10%; 
+  a {
+    color: white; 
+  } /* a */
+    
   // min-height: 250px;
   .logo-holder {
+    text-align: center;
+    margin: 0 auto;
     min-height: 200px; 
+    max-width: 200px;
+    margin-bottom: 20px;
   } /* .logo-holder */   
 } /* .panel */
   
